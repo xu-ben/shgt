@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>欢迎光临</title>
+		<link rel="stylesheet" href="index.css">
+		<script type="text/javascript">
+			function memberlogin() {
+				var name = window.prompt("请输入用户名");
+				var word = window.prompt("请输入密码");
+				var form = document.getElementById("memberlogin");
+				var username = document.getElementById("membername");
+				username.value = name;
+				var password = document.getElementById("memberpassword");
+				password.value = word;
+				form.submit();
+			}
+			function adminlogin() {
+				var a = window.prompt("请输入管理员密码");
+				var form = document.getElementById("adminlogin");
+				var input = document.getElementById("adminpassword");
+				input.value = a;
+				form.submit();
+			}
+		</script>
+	</head>
+	<body>
+		
+		<header>
+			<br /><br /><br /><br /><br />
+			<h1><font>北林二手物品交易网</font></h1>
+			<h4>欢迎光临</h4>
+			<br /><br /><br /><br /><br />
+		</header>
+	
+		<div id="container" align="center">
+		<nav>
+				<a href="MemberView?reqname=login">游客进入</a>
+		<form id="memberlogin" action="MemberView" method="post">
+			<input id="memberreqname" type="hidden" name="reqname" value="login"/>
+			<input id="membername" type="hidden" name="username"/>
+			<input id="memberpassword" type="hidden" name="password"/>
+			<a href="#" onclick="JavaScript:memberlogin()">会员进入</a>
+		</form>
+		<form id="adminlogin" action="AdminView" method="post">
+			<input id="adminreqname" type="hidden" name="reqname" value="login"/>
+			<input id="adminpassword" type="hidden" name="password"/>
+			<a href="#" onclick="JavaScript:adminlogin()">管理员进入</a>
+		</form>
+				<a href="register.jsp">注册会员</a>
+		</nav>
+		</div>
+		
+		<footer>
+			<div align="center"><font> <br />&copy;2011 北京林业大学计算机08-2班软件工程实习第一小组 版权所有 </font></div>
+		</footer>
+		
+	</body>
+</html>

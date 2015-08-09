@@ -1,0 +1,639 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>资讯--护肤产品</title>
+<meta name="description" content="xxx有限公司自从2007年以来一直致力于网站开发，网站推广。尤其在网页设计风格上一直保持业界良好的口碑，与精美的设计。引领着中国网站设计风格的风向标。">
+<meta name="keywords" content="护肤产品">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<!--[if lte IE 6]>
+<link href="css/ie6_nav.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<!--[if lte IE 7]>
+<link href="css/ie7_nav.css" rel="stylesheet" type="text/css">
+<![endif]-->
+</head>
+
+<body>
+<div class="main">
+
+<!--header  begin-->
+<div id="header">
+<div class="logo"><img alt="" src="css/top/logo.gif" /></div>
+<div  class="Hcenter">
+		<div class="hot_line">400-800000</div>
+		<div><div id="search">
+<div class="left">搜&nbsp;索&nbsp;</div>
+<div class="right">
+<form  id="headerSearchForm" method="post" action="products.asp" name="productSearch"><input name="myKeyword" size=24 id="mykeyword"  value="产品搜索" onfocus="if(this.value=='产品搜索')this.value='';" onblur="if(this.value=='')this.value='产品搜索';" type="text"/><input type="submit" id="search-button" value="" onclick="return click_search()" /><input name="search" value="true" type="hidden" /></form>
+
+</div>
+</div> 
+       
+        
+<script language="javascript">
+	function click_search(){
+		searchkey=document.getElementById("headerSearchForm");
+		var keywords;
+		keywords=searchkey.myKeyword.value;
+//		alert(keywords);
+		if(keywords==""){
+			alert("请输入要搜索的产品名称!");
+			searchkey.myKeyword.select();
+			searchkey.myKeyword.focus();
+			return false;
+		}
+		else if(keywords=="产品搜索"){
+			alert("请输入要搜索的产品名称!");
+			searchkey.myKeyword.select();
+			searchkey.myKeyword.focus();
+			return false;
+		}
+	
+	}
+</script>
+
+
+
+
+</div>
+</div>
+<div class="Hright">
+		<div class="sign"><a href="login.asp"><b>登录</b></a><a href="register.asp"><b>&nbsp;&nbsp;&nbsp;注册</b></a>
+</div>
+		<div class="bcount"><a href='shopcart.asp' id=shop_car>购物车&nbsp;<font color=#ff0000><b>0</b></font>&nbsp;件</a></div>
+
+</div>
+</div>
+<div class="clear"></div>
+<!--header  begin-->
+
+
+
+<!--nav  begin-->
+<div><div id="global-header">
+<div class="nav">
+<ul>
+    <li id="index_nav"><a href="index.asp">首页</a></li>
+    <li id="newslist_nav"><a href="newslist.asp">新闻</a></li>
+    <li><a href="products.asp?bid=30">洁面乳</a></li>
+    <li id="products_nav"><a href="products.asp?bid=1">爽肤水</a></li>
+	<li id="products_nav"><a href="products.asp?bid=27">乳液面霜</a></li>
+	<li id="products_nav"><a href="products.asp?bid=28">面膜面霜</a></li>
+	<li id="products_nav"><a href="products.asp?bid=29">眼部护理</a></li>
+	<li id="products_nav"><a href="products.asp?bid=30">颈部护理</a></li> <li><a href="products.asp?bid=30">热卖</a></li>
+    
+</ul>
+</div>
+</div>
+<script language="javascript">
+ 	var geturl=window.location.pathname;
+		switch (geturl){
+			case '/index.asp':
+			document.getElementById('index_nav').className='on';
+			break
+			case '/about.asp':
+			 document.getElementById('about_nav').className='on';
+			break
+			case '/showabout.asp':
+			 document.getElementById('about_nav').className='on';
+			break
+			case '/newslist.asp':
+			 document.getElementById('newslist_nav').className='on';
+			break
+			case '/news.asp':
+			 document.getElementById('newslist_nav').className='on';
+			break
+			case '/links.asp':
+			 document.getElementById('links_nav').className='on';
+			break
+			case '/products.asp':
+			document.getElementById('products_nav').className='on';
+			break
+			case '/productshow.asp':
+			document.getElementById('products_nav').className='on';
+			break
+		
+
+
+			case '/service.asp':
+			document.getElementById('service_nav').className='on';
+			break
+			case '/showservice.asp':
+			 document.getElementById('service_nav').className='on';
+			break
+			case '/sales.asp':
+			document.getElementById('sales_nav').className='on';
+			break
+			case '/showsales.asp':
+			document.getElementById('sales_nav').className='on';
+			break
+			case '/down.asp':
+			document.getElementById('down_nav').className='on';
+			break
+			case '/showdown.asp':
+			document.getElementById('down_nav').className='on';
+			break
+			case '/anli.asp':
+			document.getElementById('anli_nav').className='on';
+			break
+			case '/showanli.asp':
+			document.getElementById('anli_nav').className='on';
+			break
+			case '/support.asp':
+			document.getElementById('support_nav').className='on';
+			break
+			case '/showsupport.asp':
+			 document.getElementById('support_nav').className='on';
+			break
+			case '/contact.asp':
+			 document.getElementById('contact_nav').className='on';
+			break
+			case '/showcontact.asp':
+			 document.getElementById('contact_nav').className='on';
+			break
+			case '/liuyan.asp':
+			 document.getElementById('liuyan_nav').className='on';
+			break
+			case '/liuyanlist.asp':
+			 document.getElementById('liuyan_nav').className='on';
+			break
+
+			default:
+			document.getElementById('index_nav').className='on';
+			
+		}
+</script></div>
+<!--nav  end-->
+
+
+
+<!--灰色主要内容部分-->
+<div class="main_bg">
+
+<!--公告部分   开始-->
+<div  id="gonggao">
+		<div class="title">网站公告：</div>
+		<div class="content"><marquee onmouseover="this.stop()" onmouseout="this.start()" width="750" scrollamount="2">新年到，网上商城为您送上贺岁大礼  网上商城全场男装惊喜特价！  年末多重好礼大放送！  入住网上商城，惊喜活动连连看！</marquee></div>
+</div>
+<div class="clear"></div>
+<!--公告部分  结束-->
+
+
+
+<!--左侧列表和右侧详细 部分-->
+<div id="main_neiye">
+<div class="main_left">
+
+				<!--classp   begin-->
+				<div id="box2">
+				<div class="box_t"><h3>资讯</h3></div>
+				<div class="box_m"><ul id="sidebar">      
+        
+        <li><a href="newslist.asp?class=35&bname=公司动态"> 公司动态 </a> </li>
+        
+        <li><a href="newslist.asp?class=33&bname=新闻资讯"> 新闻资讯 </a> </li>
+        
+        <li><a href="newslist.asp?class=34&bname=业内新闻"> 业内新闻 </a> </li>
+         
+  </ul>
+</div>
+				</div>
+				<!--classp   end-->
+				
+				<!--联系我们   begin-->
+				<div id="box0">
+				<div class="box_t"><h3></h3></div>
+				<div class="box_m">地址：北京朝阳区建国路1号 <br />
+邮编：100000<br />
+总机：010-888888 - 9 <br />
+电话：010-999999 <br />
+传真：010-888888 <br />
+Email:abc@sohu.com</div>
+				</div>
+				<!--联系我们  end-->
+			
+				
+				
+				
+				
+				
+</div>
+<div class="main_right">
+
+
+
+			<!--内页pic   begin-->
+			<div id="pic"><img border="0" alt="" src="uploadfile/p/neiye/01.jpg" /></div>
+			<!--内页pic  end-->
+
+
+			
+			<!--当前位置   begin-->
+			<div id="current_position">
+			首页&nbsp;&raquo;&nbsp;资讯
+			</div>
+			<!--当前位置  end-->
+
+			<!--当前位置   begin-->
+			<div  class="neiye_detail_content">
+			  <!-- start news-->
+<ul id="newslist">
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=267" title="农行H股大涨幕后：四大佬加仓持股逾六成">农行H股大涨幕后：四大佬加仓持股逾六成</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=266" title="人均GDP6500美元 资源多 博茨瓦纳来浙送商机">人均GDP6500美元 资源多 博茨瓦纳来浙送商机</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=265" title="华谊兄弟 《唐山大地震》上映提振业绩">华谊兄弟 《唐山大地震》上映提振业绩</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=264" title="南京蒜价突破10元超过肉价 据称大蒜遭囤积炒作">南京蒜价突破10元超过肉价 据称大蒜遭囤积炒作</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=263" title="西三角概念再起">西三角概念再起</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=262" title="发挥科技优势 加快企业发展">发挥科技优势 加快企业发展</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=261" title="义乌向全球招揽企业总部落户 两杭企已前去考察">义乌向全球招揽企业总部落户 两杭企已前去考察</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=260" title="首钢集团被指违反澳公司法 收购澳矿遇阻">首钢集团被指违反澳公司法 收购澳矿遇阻</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=259" title="小贷公司业务暴增尴尬仍存 分布不均资金不足">小贷公司业务暴增尴尬仍存 分布不均资金不足</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=258" title="义乌向全球招揽企业总部落户 两杭企已前去考察">义乌向全球招揽企业总部落户 两杭企已前去考察</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=257" title="首钢集团被指违反澳公司法 收购澳矿遇阻">首钢集团被指违反澳公司法 收购澳矿遇阻</a>&nbsp;&nbsp;
+
+</li>
+
+
+
+<li>
+
+<div class="data">
+[
+    2010-07-26
+]
+</div>
+<a href="news.asp?id=250" title="小贷公司业务暴增尴尬仍存 分布不均资金不足">小贷公司业务暴增尴尬仍存 分布不均资金不足</a>&nbsp;&nbsp;
+
+</li>
+
+
+     
+
+<div style="float:right;margin:10px;">
+	<table border=0 align=right>
+<form method=get onsubmit="document.location = 'http://www.mobanku.com/test/02457/newslist.asp?Page='+ this.page.value;return false;"><TR>
+<TD align=right>
+<p align=right>
+ 共有12条&nbsp;
+ 共：1页&nbsp;
+ 每页20篇&nbsp;
+ 当前第：1页&nbsp;
+首页 
+上一页 
+下一页 
+尾页 
+</TD>
+</TR></form>
+</table>
+
+</div>  
+
+</ul>
+<!-- end news-->
+			</div>
+			<!--当前位置  end-->
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="clear"></div>
+<!--左侧列表和右侧详细   部分-->
+
+
+
+
+
+
+
+</div>
+<!--灰色主要内容部分-->
+
+
+
+
+
+<!--地底部导航  开始-->
+<div><!-- help nav start -->
+
+<!-- help nav end -->
+<table border="0" cellspacing="0" cellpadding="0" align="center" id="index_help">
+  <tr>
+    
+    <td align="center" valign="top" class="dl_1 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=1">售后服务</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=1">退换货政策</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=41">延保服务</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+    <td align="center" valign="top" class="dl_2 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=5">关于支付</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=16">常见问题</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=32">支付方式</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+    <td align="center" valign="top" class="dl_3 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=8">关于配送</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=39">免运费政策</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=40">EMS/邮政普包</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+    <td align="center" valign="top" class="dl_4 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=3">新手上路</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=6">我们的承诺</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=34">怎样购物</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=38">网站声明</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+    <td align="center" valign="top" class="dl_5 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=7">申请合作</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=31">申请供应商</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=37">友情合作</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+    <td align="center" valign="top" class="dl_6 td">
+	
+      <table cellspacing="0" cellpadding="0"   border=0  align="center" >
+	  <!-- 大类 start -->
+        <tr>
+          <td  align="left" valign="top" class="help_big"><a href="help.asp?typeid=4">关于我们</a></td>
+        </tr>
+      <!-- 大类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=29">公司简介</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=35">联系我们</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+	<!-- 小类 start -->
+        <tr>
+          <td align="left" valign="top" class="help_small"><a href="help.asp?id=36">诚聘英才</a></td>
+        </tr>
+    <!-- 小类 end -->
+    
+      </table>
+    
+    </td>
+    
+  </tr>
+</table>
+</div>
+<!--地底部导航   end-->
+
+
+
+<!--版权和友情链接  开始-->
+<div id="footer">
+<div class="copyright"><p>版权所有：<a href="#">红酒网</a> 地址：北京市朝阳区建国路100号 8号公馆&nbsp; 电话：010-1111 1111&nbsp; 传真：010-1111 1111</p></div>
+<div class="links"><img alt="" src="css/images/payment.gif" /></div>
+</div>
+<!--版权和友情链接 end-->
+
+
+</div>
+</body>
+</html>
