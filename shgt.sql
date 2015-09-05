@@ -87,73 +87,73 @@ create table `comment`(
 #
 # Dumping data for table users
 #
-#Óï·¨£º
-#show databases;//²é¿´ÒÑ¾­´´½¨ºÃµÄÊı¾İ¿â
-#use shgt;//Ê¹ÓÃÒÑ¾­´´½¨ºÃµÄÊı¾İ¿â
-#show tables;//²é¿´Êı¾İ¿âÖĞÒÑ¾­´´½¨ºÃµÄ±í
-#describe users(±íÃû);//²é¿´¾ßÌå±íµÄ´´½¨
+#è¯­æ³•ï¼š
+#show databases;//æŸ¥çœ‹å·²ç»åˆ›å»ºå¥½çš„æ•°æ®åº“
+#use shgt;//ä½¿ç”¨å·²ç»åˆ›å»ºå¥½çš„æ•°æ®åº“
+#show tables;//æŸ¥çœ‹æ•°æ®åº“ä¸­å·²ç»åˆ›å»ºå¥½çš„è¡¨
+#describe users(è¡¨å);//æŸ¥çœ‹å…·ä½“è¡¨çš„åˆ›å»º
 
 
-INSERT INTO `users` VALUES (1,'admin','admin','xuben@bjfu.edu.cn',0,'000000000000000000','13146668862','0000-00-00',0);
+INSERT INTO `users` VALUES (1,'admin','admin','bjfuxuben@gmail.com',0,'000000000000000000','12345678742','0000-00-00',0);
 
-#2users±í²åÈë
-insert into `users` values(080824209,'Ğ¡ Ä','123','xuben@bjfu.edu.cn',0,'','123456','2011-04-28',1);
-insert into `users` values(080824202,'·²´óÏÀ','123','zhaofan@126.com',0,'','7777777','2011-04-28',1);
-insert into `users` values(080824230,'ßãßã','123','meiyexin@sohu.com',0,'','66666666','2011-04-28',1);
-insert into `users` values(080824229,'á°á°','123','wangqianlan66@126.com',0,'','88888888','2011-04-28',1);
+#2usersè¡¨æ’å…¥
+insert into `users` values(080824209,'å°çŠ‡','123','xuben@bjfu.edu.cn',0,'','123456','2011-04-28',1);
+insert into `users` values(080824202,'å‡¡å¤§ä¾ ','123','zhaofan@126.com',0,'','7777777','2011-04-28',1);
+insert into `users` values(080824230,'å’©å’©','123','meiyexin@sohu.com',0,'','66666666','2011-04-28',1);
+insert into `users` values(080824229,'å²šå²š','123','wangqianlan66@126.com',0,'','88888888','2011-04-28',1);
 
-#3good_type±í²åÈë
-insert into `good_type` values(1,'¼ÒÓÃµçÆ÷');
-insert into `good_type` values(2,'¶şÊÖÊÖ»ú');
-insert into `good_type` values(3,'Íæ¾ß');
-insert into `good_type` values(4,'ÏĞÖÃÀñÆ·');
-insert into `good_type` values(5,'Ïû·Ñ¿¨');
-insert into `good_type` values(6,'µçÄÔ');
-insert into `good_type` values(7,'¶şÊÖ³µ');
-insert into `good_type` values(8,'¼ÒÓÃµçÆ÷');
-insert into `good_type` values(9,'¶şÊÖÊÖ»ú');
-insert into `good_type` values(10,'¶şÊÖ·¿');
-insert into `good_type` values(11,'ÊıÂëÏà»ú');
-insert into `good_type` values(12,'ÑÌ¾Æ/²èÒ¶');
-insert into `good_type` values(13,'Í¼Êé/ÔÓÖ¾');
-insert into `good_type` values(14,'ÊÖ±í');
-insert into `good_type` values(15,'¹ÅÍæ/ÊÕ²Ø');
-insert into `good_type` values(16,'»úÆ±');
-insert into `good_type` values(17,'¼Ò¾ÓÓÃÆ·');
-insert into `good_type` values(18,'Îå½ğ/½¨²Ä');
-insert into `good_type` values(19,'Ä¦ÍĞ³µ/×ÔĞĞ³µ');
-insert into `good_type` values(20,'µçÊÓ/ÒôÏì');
-insert into `good_type` values(21,'°ì¹«ÓÃÆ·');
-insert into `good_type` values(22,'ÌåÓıÓÃÆ·');
-insert into `good_type` values(23,'Íæ¾ß/ÓÎÏ·»ú');
-insert into `good_type` values(24,'ÌåÓıÓÃÆ·');
-insert into `good_type` values(25,'Ê×ÊÎ');
-insert into `good_type` values(26,'Ä¸Ó¤ÓÃÆ·');
-insert into `good_type` values(27,'°ü°ü/Ïä°ü');
-insert into `good_type` values(28,'Å®×°/Å®Ğ¬');
-insert into `good_type` values(29,'ÑÛ¾µ/Ì«Ñô¾µ');
-insert into `good_type` values(30,'ÃÅÆ±/ÇòÆ±/Ï·Æ±');
-insert into `good_type` values(31,'¸ÖÇÙ/ÌáÇÙ/ÀÖÆ÷');
-insert into `good_type` values(32,'»¯×±Æ·');
-insert into `good_type` values(33,'ÄĞ×°/ÄĞĞ¬');
-insert into `good_type` values(34,'»ğ³µÆ±');
+#3good_typeè¡¨æ’å…¥
+insert into `good_type` values(1,'å®¶ç”¨ç”µå™¨');
+insert into `good_type` values(2,'äºŒæ‰‹æ‰‹æœº');
+insert into `good_type` values(3,'ç©å…·');
+insert into `good_type` values(4,'é—²ç½®ç¤¼å“');
+insert into `good_type` values(5,'æ¶ˆè´¹å¡');
+insert into `good_type` values(6,'ç”µè„‘');
+insert into `good_type` values(7,'äºŒæ‰‹è½¦');
+insert into `good_type` values(8,'å®¶ç”¨ç”µå™¨');
+insert into `good_type` values(9,'äºŒæ‰‹æ‰‹æœº');
+insert into `good_type` values(10,'äºŒæ‰‹æˆ¿');
+insert into `good_type` values(11,'æ•°ç ç›¸æœº');
+insert into `good_type` values(12,'çƒŸé…’/èŒ¶å¶');
+insert into `good_type` values(13,'å›¾ä¹¦/æ‚å¿—');
+insert into `good_type` values(14,'æ‰‹è¡¨');
+insert into `good_type` values(15,'å¤ç©/æ”¶è—');
+insert into `good_type` values(16,'æœºç¥¨');
+insert into `good_type` values(17,'å®¶å±…ç”¨å“');
+insert into `good_type` values(18,'äº”é‡‘/å»ºæ');
+insert into `good_type` values(19,'æ‘©æ‰˜è½¦/è‡ªè¡Œè½¦');
+insert into `good_type` values(20,'ç”µè§†/éŸ³å“');
+insert into `good_type` values(21,'åŠå…¬ç”¨å“');
+insert into `good_type` values(22,'ä½“è‚²ç”¨å“');
+insert into `good_type` values(23,'ç©å…·/æ¸¸æˆæœº');
+insert into `good_type` values(24,'ä½“è‚²ç”¨å“');
+insert into `good_type` values(25,'é¦–é¥°');
+insert into `good_type` values(26,'æ¯å©´ç”¨å“');
+insert into `good_type` values(27,'åŒ…åŒ…/ç®±åŒ…');
+insert into `good_type` values(28,'å¥³è£…/å¥³é‹');
+insert into `good_type` values(29,'çœ¼é•œ/å¤ªé˜³é•œ');
+insert into `good_type` values(30,'é—¨ç¥¨/çƒç¥¨/æˆç¥¨');
+insert into `good_type` values(31,'é’¢ç´/æç´/ä¹å™¨');
+insert into `good_type` values(32,'åŒ–å¦†å“');
+insert into `good_type` values(33,'ç”·è£…/ç”·é‹');
+insert into `good_type` values(34,'ç«è½¦ç¥¨');
 
-#info_release±í²åÈë
-insert into `info_release` values(1,2,080824230,'8³ÉĞÂÏÄÆÕÊÖ»ú',1,'ÏÄÆÕÊÖ»ú×ªÈÃ','2011-04-28');
-insert into `info_release` values(2,22,080824209,'7³ÉĞÂ°¢µÏÀºÇò',1,'ÀºÇò×ªÈÃ','2011-04-29');
-insert into `info_release` values(3,29,080824229,'Ì«Ñô¾µ×ªÈÃ',1,'Ì«Ñô¾µ×ªÈÃ','2011-04-29');
-insert into `info_release` values(4,31,080824202,'¸ÖÇÙ×ªÈÃ£¬¼Û¸ñÃæÒé¹ş',1,'¸ÖÇÙ×ªÈÃ','2011-04-30');
+#info_releaseè¡¨æ’å…¥
+insert into `info_release` values(1,2,080824230,'8æˆæ–°å¤æ™®æ‰‹æœº',1,'å¤æ™®æ‰‹æœºè½¬è®©','2011-04-28');
+insert into `info_release` values(2,22,080824209,'7æˆæ–°é˜¿è¿ªç¯®çƒ',1,'ç¯®çƒè½¬è®©','2011-04-29');
+insert into `info_release` values(3,29,080824229,'å¤ªé˜³é•œè½¬è®©',1,'å¤ªé˜³é•œè½¬è®©','2011-04-29');
+insert into `info_release` values(4,31,080824202,'é’¢ç´è½¬è®©ï¼Œä»·æ ¼é¢è®®å“ˆ',1,'é’¢ç´è½¬è®©','2011-04-30');
 
-#goods±í²åÈë
-insert into `goods` values(1,'iphoneÊÖ»ú',2000,'2011-04-28',2,'','¼Û¸ñ¿ÉÉÌÁ¿£¬ÁªÏµ±¾ÈË');
-insert into `goods` values(2,'È¹×Ó',28,'2011-04-28',13,'','ÏÄ¼¾ÃÀÈ¹£¬»¶Ó­ÖÂµçÁªÏµ');
-insert into `goods` values(3,'Ì¨µÆ',1,'2011-04-28',13,'','ÍÃ×ÓÌ¨µÆ£¬ÊÊºÏĞ¡º¢×ÓÊ¹ÓÃÅ¶');
-insert into `goods` values(4,'¿¨Í¨¹·',3,'2011-04-28',13,'','8³ÉĞÂµÄĞ¡¹·Å¶£¬»¶Ó­ÖÂµçÁªÏµ');
-insert into `goods` values(5,'»úÆ±',16,'2011-04-28',13,'','30ÈÕ±±¾©µ½ÖØÇì£¬»¶Ó­ÖÂµçÁªÏµ');
-insert into `goods` values(6,'´½¸à',32,'2011-04-28',13,'','ĞÂÂòÃ»ÓÃ¹ıµÄ¹ş£¬»¶Ó­ÖÂµçÁªÏµ');
+#goodsè¡¨æ’å…¥
+insert into `goods` values(1,'iphoneæ‰‹æœº',2000,'2011-04-28',2,'','ä»·æ ¼å¯å•†é‡ï¼Œè”ç³»æœ¬äºº');
+insert into `goods` values(2,'è£™å­',28,'2011-04-28',13,'','å¤å­£ç¾è£™ï¼Œæ¬¢è¿è‡´ç”µè”ç³»');
+insert into `goods` values(3,'å°ç¯',1,'2011-04-28',13,'','å…”å­å°ç¯ï¼Œé€‚åˆå°å­©å­ä½¿ç”¨å“¦');
+insert into `goods` values(4,'å¡é€šç‹—',3,'2011-04-28',13,'','8æˆæ–°çš„å°ç‹—å“¦ï¼Œæ¬¢è¿è‡´ç”µè”ç³»');
+insert into `goods` values(5,'æœºç¥¨',16,'2011-04-28',13,'','30æ—¥åŒ—äº¬åˆ°é‡åº†ï¼Œæ¬¢è¿è‡´ç”µè”ç³»');
+insert into `goods` values(6,'å”‡è†',32,'2011-04-28',13,'','æ–°ä¹°æ²¡ç”¨è¿‡çš„å“ˆï¼Œæ¬¢è¿è‡´ç”µè”ç³»');
 
-#comment±í²åÈë
-insert into `comment` values(1,'ºÃÏ²»¶Õâ¸öÑÛ¾µÅ¶',080824229,3);
-insert into `comment` values(2,'Ê²Ã´ĞÍºÅµÄÊÖ»ú°¡',080824230,1);
-insert into `comment` values(3,'ÀºÇò»¹ÓĞµ¯ĞÔÃ×ÓĞÅ¶',080824209,2);
-insert into `comment` values(4,'¸ÖÇÙµÄÒôÖÊÔõÃ´Ñù°¡',080824202,4);
+#commentè¡¨æ’å…¥
+insert into `comment` values(1,'å¥½å–œæ¬¢è¿™ä¸ªçœ¼é•œå“¦',080824229,3);
+insert into `comment` values(2,'ä»€ä¹ˆå‹å·çš„æ‰‹æœºå•Š',080824230,1);
+insert into `comment` values(3,'ç¯®çƒè¿˜æœ‰å¼¹æ€§ç±³æœ‰å“¦',080824209,2);
+insert into `comment` values(4,'é’¢ç´çš„éŸ³è´¨æ€ä¹ˆæ ·å•Š',080824202,4);
